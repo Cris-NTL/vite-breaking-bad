@@ -9,23 +9,18 @@ export default {
     AppHeader,
     AppMain,
   },
-  data() {
-    return {
-      store
-    }
-  },
+  data: () => ({
+    store
+  }),
+
   mounted() {
     store.loading = true;
     axios.get(store.apiURL).then((resp) => {
       this.store.cards = resp.data.data;
       store.loading = false;
     })
-    axios
-      .get("https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0")
-      .then((resp) => {
-        const myData = resp.data.data;
-      })
   }
+
 }
 
 </script>

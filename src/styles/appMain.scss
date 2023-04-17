@@ -1,2 +1,13 @@
 @use "./general.scss";
-@use "./partials/variables" as *;
+@use "./partials/variables" as c;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: calc(20% - 1rem);
+    margin: 0.5rem;
+}
