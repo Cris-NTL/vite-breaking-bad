@@ -6,11 +6,9 @@ export default {
     name: "AppMain",
     components: { AppCard },
 
-    data() {
-        return {
-            store
-        }
-    }
+    data: () => ({
+        store
+    }),
 }
 </script>
 

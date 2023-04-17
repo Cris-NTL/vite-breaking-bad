@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-    <div class="card my-4" style="border: 1px solid black; height: 25rem;">
+    <div class="card my-4" style="border: 1px solid black; height: 27rem;">
         <div class="card-header p-0" style="border: none;">
             <img :src="img" alt="">
         </div>
