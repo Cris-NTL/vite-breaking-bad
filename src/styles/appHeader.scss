@@ -1,0 +1,6 @@
+@use "./general.scss";
+@use "./partials/variables" as c;
+
+h2 {
+    background-color: c.$bg-color;
+}
