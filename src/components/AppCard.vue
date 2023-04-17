@@ -5,16 +5,19 @@ export default {
         name: String,
         archetype: String,
         img: String,
+    },
+    created() {
+        console.log("AppCard created with props:", this.name, this.archetype, this.img);
     }
 }
 </script>
 
 <template>
-    <div class="card">
-        <div class="card-header">
+    <div class="card my-4" style="border: 1px solid black; height: 25rem;">
+        <div class="card-header p-0" style="border: none;">
             <img :src="img" alt="">
         </div>
-        <div class="card-body">
+        <div class="card-body text-center">
             <p>{{ name }}</p>
             <p>{{ archetype }}</p>
         </div>

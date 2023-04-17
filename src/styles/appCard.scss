@@ -1,2 +1,14 @@
 @use "./general.scss";
 @use "./partials/variables" as c;
+
+.card {
+    margin: 0.5rem;
+
+    .card-body {
+        background-color: c.$main-color;
+
+        p:first-child {
+            color: c.$bg-color;
+        }
+    }
+}
